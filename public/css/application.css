@@ -1,0 +1,97 @@
+/*======== Main Parts CSS ======*/
+#title{
+  margin: 25px;
+  font-size: 35px;
+  font-family: fantasy;
+  font-weight: bolder;
+}
+.title2{
+  display: none;
+}
+.container{
+  margin-top: 10%;
+
+}
+.row{
+  display: inline-block;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ========= Results ============*/
+.outcome{
+  background-color: lightblue;
+  border-radius: 10px;
+  position: relative;
+  margin-left: 20%;
+  margin-top: 10%;
+  height: 200px;
+  width: 200px;
+  float: left;
+}
+.history{
+  background-color: lightblue;
+  border-radius: 10px;
+  width: 200px;
+  position: relative;
+  margin-right: 20%;
+  margin-top: 10%;
+  float: right;
+}
+
+/* Append divs from JS CSS*/
+.histarget{
+  background-color: lightblue;
+  border-radius: 10px;
+  width: 70px;
+  height: 200px;
+  margin: 5px;
+  overflow: scroll;
+}
+.target{
+  color: navy;
+  margin: 5px;
+}
+
+/*======== Circle and Square CSS =======*/
+
+.square{
+  position: relative;
+  z-index: 100;
+}
+.circle{
+  position: relative;
+  z-index: 200;
+  margin-left: -2%;
+  margin-right: -2%;
+}
+
+/*========== Reactive and other web kit type stuff =======*/
+
+@media screen and (max-width: 615px) {
+.title2{
+  display: inherit;
+}
+.row{
+  width: 80%;
+}
+.circle{
+  margin-left: -18px;
+  margin-right: -18px;
+}
+.outcome, .histarget, .target, .history{
+  width: 80%;
+  float: none;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+  }
+
+
+
+
+
+
+
